@@ -5,6 +5,7 @@ class LuminariaSmart:
         self.intensidade = 0
 
     def liga_desliga(self):
+        # self.ligada = not self.ligada
         if (self.ligada == False):
             self.ligada = True
         else:
@@ -12,6 +13,7 @@ class LuminariaSmart:
 
     def ajuste_intensidade(self, nova_intensidade):
         if (nova_intensidade >= 0 and nova_intensidade <= 100):
+        # if 0 <= nova_intensidade <= 100:
             self.intensidade = nova_intensidade
         else:
             print("Erro: intensidade inválida.")
